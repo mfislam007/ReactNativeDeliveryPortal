@@ -39,6 +39,7 @@ export default function Menu() {
 
 const styles = StyleSheet.create({
   screen: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'stretch',

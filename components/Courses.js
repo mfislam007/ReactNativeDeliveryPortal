@@ -9,6 +9,7 @@ import {
   Button,
   Linking,
   TouchableHighlight,
+  ScrollView,
 } from 'react-native';
 
 export default function Courses() {
@@ -35,7 +36,7 @@ export default function Courses() {
               )
             }
           >
-            eP Series press brake | Prima Power
+            Safety system (ALL USERS)
           </Text>
           <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
             primapower.com
@@ -58,7 +59,7 @@ export default function Courses() {
               )
             }
           >
-            Punching and bending machine PunchBend | Prima Power
+            Operating with LPBB_line (OPERATORS)
           </Text>
           <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
             primapower.com
@@ -79,7 +80,91 @@ export default function Courses() {
               Linking.openURL('https://www.primapower.com/de/bce/')
             }
           >
-            BCe | Primapower
+            Oerating with Tulus (OPERATORS)
+          </Text>
+          <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
+            primapower.com
+          </Text>
+        </View>
+        <View style={styles.text}>
+          <TouchableHighlight
+            onPress={() =>
+              Linking.openURL(
+                'https://www.primapower.com/wp-content/uploads/2015/12/0ad5fbc898774246ba0e5d06803d6ef72.jpg'
+              )
+            }
+          >
+            <Image source={require('./prima4.jpg')} style={styles.image} />
+          </TouchableHighlight>
+          <Text
+            onPress={() =>
+              Linking.openURL('https://www.primapower.com/de/bce/')
+            }
+          >
+            NC Epress (DESIGNERS)
+          </Text>
+          <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
+            primapower.com
+          </Text>
+        </View>
+        <View style={styles.text}>
+          <TouchableHighlight
+            onPress={() =>
+              Linking.openURL(
+                'https://www.primapower.com/wp-content/uploads/2015/12/0ad5fbc898774246ba0e5d06803d6ef72.jpg'
+              )
+            }
+          >
+            <Image source={require('./prima5.jpg')} style={styles.image} />
+          </TouchableHighlight>
+          <Text
+            onPress={() =>
+              Linking.openURL('https://www.primapower.com/de/bce/')
+            }
+          >
+            Tulus Power Processing (MANAGER)
+          </Text>
+          <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
+            primapower.com
+          </Text>
+        </View>
+        <View style={styles.text}>
+          <TouchableHighlight
+            onPress={() =>
+              Linking.openURL(
+                'https://www.primapower.com/wp-content/uploads/2015/12/0ad5fbc898774246ba0e5d06803d6ef72.jpg'
+              )
+            }
+          >
+            <Image source={require('./prima6.jpg')} style={styles.image} />
+          </TouchableHighlight>
+          <Text
+            onPress={() =>
+              Linking.openURL('https://www.primapower.com/de/bce/')
+            }
+          >
+            Maintenance (OPERATORS)
+          </Text>
+          <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
+            primapower.com
+          </Text>
+        </View>
+        <View style={styles.text}>
+          <TouchableHighlight
+            onPress={() =>
+              Linking.openURL(
+                'https://www.primapower.com/wp-content/uploads/2015/12/0ad5fbc898774246ba0e5d06803d6ef72.jpg'
+              )
+            }
+          >
+            <Image source={require('./prima7.jpg')} style={styles.image} />
+          </TouchableHighlight>
+          <Text
+            onPress={() =>
+              Linking.openURL('https://www.primapower.com/de/bce/')
+            }
+          >
+            Kysely lomake testi
           </Text>
           <Text onPress={() => Linking.openURL('https://www.primapower.com/')}>
             primapower.com
@@ -92,33 +177,28 @@ export default function Courses() {
 
 const styles = StyleSheet.create({
   screen: {
+    flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'stretch',
     padding: 20,
+    alignContent: 'stretch',
     flexWrap: 'wrap',
-    alignContent: 'flex-start',
+    alignSelf: 'stretch',
   },
   textHeading: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'red',
     textAlign: 'center',
-    padding: 20,
+    marginTop: 10,
   },
   text: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 20,
   },
   image: {
-    width: 150,
-    height: 150,
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 20,
-    flexWrap: 'wrap',
-    alignContent: 'flex-start',
+    width: 200,
+    height: 200,
+    borderRadius: 400 / 2,
   },
 });
